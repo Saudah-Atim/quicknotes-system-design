@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #176b87;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.notes-section,
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #176b87;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover:not(:disabled) {
+    background-color: #0f4f65;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#status {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #eef2f4;
+}
+
+#status.success {
+    color: #176b3a;
+    background-color: #e5f5e9;
+}
+
+#status.error {
+    color: #c62828;
+    background-color: #fdecea;
+}
+
+#note-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+#note-form h2 {
+    margin-bottom: 0;
+}
+
+#note-form label {
+    font-weight: bold;
+}
+
+#note-form input,
+#note-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font: inherit;
+}
+
+#note-form textarea {
+    resize: vertical;
+}
+
+#notes-list {
+    list-style: none;
+    padding: 0;
+}
+
+.note {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    overflow-wrap: anywhere;
+}
+
+.note h3 {
+    color: #176b87;
+    margin-top: 0;
+}
+
+.note p {
+    margin: 8px 0;
+    white-space: pre-wrap;
+}
+
+.delete-btn {
+    background-color: #c62828;
+}
+
+.delete-btn:hover:not(:disabled) {
+    background-color: #9b1c1c;
+}
+
+.empty-state {
+    text-align: center;
+    color: #666;
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .container,
+    main {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    .notes-section,
+    section {
+        padding: 20px;
+    }
+
+    header {
+        padding: 25px 15px;
+    }
+}
