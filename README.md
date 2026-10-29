@@ -40,7 +40,7 @@ Click Delete to remove a note from the displayed list.
 
 Note: This app uses a practice API, so created and deleted notes are not permanently saved on the server.
 
-# roject Files
+# Project Files
 
 index.html – the main page of the app.
 
